@@ -6,7 +6,7 @@
  * Time: 13:54
  */
 
-$countryArray = array("Ukraine", "Germany", "Sweden", "Finland");
+$countryArray = array("Ukraine" => "Kiev", "Germany" => "Berlin", "Sweden" => "Stockholm", "Finland" => "Helsinki");
 echo "<pre>";
 print_r($countryArray);
 echo "<pre>"

@@ -7,13 +7,12 @@
  */
 
 
+$hello="Hello";
+$$hello=$hello;
+$$$hello=$$hello;
+$$$hello=$$hello;
+$$$$hello=$$$hello;
+$$$$$hello=$$$$hello;
 
-define("const1","Ukraine");
-define("const2","Germany");
-define("const3","Sweden");
-
-$countryArray = array(const1,const2,const3);
-echo "<pre>";
-print_r($countryArray);
-echo "<pre>"
+echo $$$$$hello;
 ?>
