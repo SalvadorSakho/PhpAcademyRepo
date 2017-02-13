@@ -12,6 +12,7 @@ for ($p = 0; $p < count($someMen); $p++) {
     echo '<pre>';/*Перенос строки*/
 }
 
+print_r($someMen); ///print recursive
 
 echo '<pre>';/*Перенос строки*/
 echo '<pre>';/*Перенос строки*/
