@@ -33,12 +33,12 @@ for ($i = 0; $i < count($myArr) - 1; $i++) {
     $myArr[$list] = $tmp;
 }
 
-echo "Отчортированный массив c с поменяными значениями";
+echo "Отcортированный массив c поменяными значениями";
 echo "<pre>";
 var_dump($myArr);
 
-$tm1 = $myArr[count($myArr) - 1];
+/*$tm1 = $myArr[count($myArr) - 1];
 $myArr[count($myArr) - 1] = $myArr[0];
-$myArr[0] = $tm1;
+$myArr[0] = $tm1;*/
 ?>
 
