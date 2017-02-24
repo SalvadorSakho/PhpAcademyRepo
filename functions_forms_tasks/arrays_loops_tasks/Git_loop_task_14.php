@@ -16,19 +16,14 @@ $exists = array();
 
 foreach ($arr as $val => $elem) {
 
-    for ($i = 0; $i <= count($e); $i++) {
-
-        /// echo $elem . " " . $e[$i];
+    for ($i = 0; $i < count($e); $i++) {
         echo "<pre>";
         if ($elem == $e[$i]) {
-            echo $elem . " Есть $e[$i]";
-            unset($e[$i]);
-            echo " " . count($e);
+            echo "Есть $e[$i]";
             echo "<pre>";
             break;
         }
     }
-
 }
 ?>
 
