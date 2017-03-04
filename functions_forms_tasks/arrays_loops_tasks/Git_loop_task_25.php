@@ -24,7 +24,7 @@ for ($i = 0; $i < count($myArr) - 1; $i++) {
     $list = $i;
 
     for ($j = $i + 1; $j < count($myArr); $j++) {
-        if ($myArr[$j] > $myArr[$list]) {
+        if ($myArr[$j] < $myArr[$list]) {
             $list = $j;
         }
     }
@@ -33,12 +33,14 @@ for ($i = 0; $i < count($myArr) - 1; $i++) {
     $myArr[$list] = $tmp;
 }
 
+
+
+$tm1 = $myArr[count($myArr) - 1];
+$myArr[count($myArr) - 1] = $myArr[0];
+$myArr[0] = $tm1;
+
 echo "Отcортированный массив c поменяными значениями";
 echo "<pre>";
 var_dump($myArr);
-
-/*$tm1 = $myArr[count($myArr) - 1];
-$myArr[count($myArr) - 1] = $myArr[0];
-$myArr[0] = $tm1;*/
 ?>
 
