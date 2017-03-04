@@ -23,7 +23,7 @@ echo "<table border='3px' height='500px' width='500px'>";
 for ($i = 0; $i < $row; $i++) {
     echo "<tr>";
     for ($j = 0; $j < $cols; $j++) {
-        echo "<td style='background:" . $colors[rand(0, 6)] . ";'>";
+        echo "<td style='background:" . $colors[rand(0, 6)] . "; text-align: center'>" . rand() . "</td>";
     }
 }
 echo "</table>";
