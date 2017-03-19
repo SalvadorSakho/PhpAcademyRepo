@@ -16,8 +16,8 @@
 
 $colors = array('red', 'yellow', 'blue', 'gray', 'maroon', 'brown', 'green');
 
-$row = 8;
-$cols = 2;
+$row = 10;
+$cols = 10;
 
 echo "<table border='3px' height='500px' width='500px'>";
 for ($i = 0; $i < $row; $i++) {

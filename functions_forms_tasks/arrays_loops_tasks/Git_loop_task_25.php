@@ -20,6 +20,7 @@ echo "Начальный массив";
 echo "<pre>";
 var_dump($myArr);
 
+
 for ($i = 0; $i < count($myArr) - 1; $i++) {
     $list = $i;
 
@@ -32,7 +33,6 @@ for ($i = 0; $i < count($myArr) - 1; $i++) {
     $myArr[$i] = $myArr[$list];
     $myArr[$list] = $tmp;
 }
-
 
 
 $tm1 = $myArr[count($myArr) - 1];
