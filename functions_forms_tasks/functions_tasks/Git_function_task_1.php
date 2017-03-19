@@ -28,8 +28,6 @@ function getCommonWords($a, $b)
 
     var_dump($finalMass);
 }
-
-
 ?>
 
 
