@@ -18,29 +18,23 @@ for ($i = 0; $i < 10; $i++) {
 
 echo "Начальный массив";
 echo "<pre>";
-var_dump($myArr);
+print_r($myArr);
+echo "<pre>";
+echo $maxValue = max($myArr);
+echo "<pre>";
+echo $minValue = min($myArr);
+echo "<pre>";
 
+foreach ($myArr as $values => $items) {
 
-for ($i = 0; $i < count($myArr) - 1; $i++) {
-    $list = $i;
-
-    for ($j = $i + 1; $j < count($myArr); $j++) {
-        if ($myArr[$j] < $myArr[$list]) {
-            $list = $j;
-        }
+    if ($items == $maxValue) {
+        $myArr[$values] = $minValue;
+    } else if ($items == $minValue) {
+        $myArr[$values] = $maxValue;
     }
-    $tmp = $myArr[$i];
-    $myArr[$i] = $myArr[$list];
-    $myArr[$list] = $tmp;
+
 }
 
-
-$tm1 = $myArr[count($myArr) - 1];
-$myArr[count($myArr) - 1] = $myArr[0];
-$myArr[0] = $tm1;
-
-echo "Отcортированный массив c поменяными значениями";
-echo "<pre>";
-var_dump($myArr);
+print_r($myArr);
 ?>
 
