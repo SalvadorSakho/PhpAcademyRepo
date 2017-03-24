@@ -32,7 +32,6 @@ foreach ($myArr as $values => $items) {
     } else if ($items == $minValue) {
         $myArr[$values] = $maxValue;
     }
-
 }
 
 print_r($myArr);
